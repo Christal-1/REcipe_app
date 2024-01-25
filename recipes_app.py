@@ -47,16 +47,16 @@ def main():
         print("2. Add Recipe")
         print("3. Exit")
 
-        choice = input("Enter your choice (1/2/3): ")
+        user_input = input("Enter your choice (1/2/3): ")
 
-        if choice == "1":
+        if user_input == "1":
             display_all_recipes(recipes)
-        elif choice == "2":
+        elif user_input == "2":
             new_recipe = add_recipe()
             recipes.append(new_recipe)
             save_recipes(recipes)
             print("Recipe added successfully!")
-        elif choice == "3":
+        elif user_input == "3":
             print("Exiting Recipe App. Goodbye!")
             break
         else:
